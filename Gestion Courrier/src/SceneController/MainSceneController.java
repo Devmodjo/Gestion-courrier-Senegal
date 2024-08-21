@@ -37,6 +37,8 @@ public class MainSceneController {
     
     @FXML
     private void initialize() {
+
+	BtnSortant.setDisable(true);
     	/* charger le contenu par defaut de la mainBox */
     	FXMLLoader loader = new FXMLLoader(getClass().getResource("./../View/gestEntrantBox.fxml"));
     	try {
