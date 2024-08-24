@@ -4,7 +4,7 @@ anchorPane{
 	-fx-background-color: white;
 }
 Button{
-	-fx-background-color: #29BD10;
+	-fx-background-color: #2F7BE8;
 	-fx-text-fill:white;
 }
 TextField,
@@ -16,11 +16,11 @@ TextArea{
 }
 
 .LeftBox{
-	-fx-background-color: linear-gradient(to top, #0F4706, #29BD10);
+	-fx-background-color: #2F7BE8;
 	-fx-background-repeat: no-repeat;
 }
 .darkBtn{
-	-fx-background-color:#166308 ; /* 1C539E*/
+	-fx-background-color: #2155A1; /* 1C539E*/
 	-fx-border-radius: 5px;
 }
 
