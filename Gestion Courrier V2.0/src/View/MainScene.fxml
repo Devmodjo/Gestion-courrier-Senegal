@@ -13,7 +13,7 @@
          <children>
             <ImageView fitHeight="198.0" fitWidth="173.0" layoutX="12.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/LogoSenegal.png" />
+                  <Image url="@../img/user-avatar.png" />
                </image>
             </ImageView>
             <Label fx:id="welcomelabel" alignment="CENTER" layoutY="197.0" prefHeight="44.0" prefWidth="198.0" text="Label" textAlignment="CENTER" textFill="WHITE">
