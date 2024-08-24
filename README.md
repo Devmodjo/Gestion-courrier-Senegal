@@ -5,3 +5,8 @@ et utilisant le pilote JDBC sqlite
 
 Dans cette premier version du logiciel l'utilisateur, ne peut que enregister des courrier entrant
 et les gere(suppression, modification) et ainsi faire un recherche rapide dans un tableau de courrier
+
+***logiciel de Gestion de Courrier v2.0***
+
+dans cette version l'utilisateur a maintenant acces a un tableau de bord lui permet d'avoir de information 
+plus detaillé sur les divers enregistrement sur ces action s sous l'application
