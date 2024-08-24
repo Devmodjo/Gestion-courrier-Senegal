@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Login_button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="275.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController.LoginSceneController">
+   <children>
+      <ImageView fitHeight="188.0" fitWidth="169.0" layoutX="54.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cadenas-ferme.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameInput" layoutX="31.0" layoutY="213.0" prefHeight="25.0" prefWidth="214.0" promptText="username" />
+      <PasswordField fx:id="password_input" layoutX="31.0" layoutY="255.0" prefHeight="25.0" prefWidth="214.0" promptText="password" />
+      <Button fx:id="loginButton" layoutX="76.0" layoutY="289.0" mnemonicParsing="false" onAction="#LoginAccount" prefHeight="25.0" prefWidth="123.0" text="Login">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="createAccount_button" layoutX="95.0" layoutY="316.0" onMouseClicked="#switchtoCreateaccountScene" text="create account..." textFill="#29bd10" />
+   </children>
+</AnchorPane>
