@@ -83,9 +83,9 @@ public class DashboardController {
     private ProgressBar progressBarCourrierConfidentielSortant;
     @FXML
     private ProgressBar progressBarCourrierAdministratifSortant;
-    // my dress up darling
-    // devil man cry babys
-    // sho tucker
+   
+
+
 	@FXML
 	private void initialize() {
 		
