@@ -9,4 +9,4 @@ et les gere(suppression, modification) et ainsi faire un recherche rapide dans u
 ***logiciel de Gestion de Courrier v2.0***
 
 dans cette version l'utilisateur a maintenant acces a un tableau de bord lui permet d'avoir de information 
-plus detaillé sur les divers enregistrement sur ces action s sous l'application
+plus detaillé sur les divers enregistrement sur ces action s sous l'application et ainsi que la gestion des courriers sortants 
