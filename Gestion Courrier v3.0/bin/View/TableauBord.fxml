@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="883.0" styleClass="contain_courrier_info" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController.DashboardController">
+   <children>
+      <Label layoutX="26.0" layoutY="14.0" text="Tableau de Bord">
+         <font>
+            <Font name="Berlin Sans FB" size="27.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="containerCourrierOrdinaireEntrant" cacheShape="false" layoutX="71.0" layoutY="133.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="courrier ordinaire" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierOrdinaire" layoutX="11.0" layoutY="46.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10;" />
+            <Label alignment="CENTER" layoutX="158.0" layoutY="65.0" text="/" textFill="#c6bdbd" />
+            <Label fx:id="maxCourrier" layoutX="164.0" layoutY="66.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="nbreCourrierOrdinaire" layoutX="149.0" layoutY="66.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent" layoutX="168.0" layoutY="29.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Separator layoutX="47.0" layoutY="93.0" prefHeight="4.0" prefWidth="76.0" />
+      <Label layoutX="128.0" layoutY="81.0" text="Courrier Entrant">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="268.0" layoutY="94.0" prefHeight="4.0" prefWidth="562.0" />
+      <AnchorPane fx:id="containerCourrierConfidentielEntrant" cacheShape="false" layoutX="300.0" layoutY="133.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="courrier confidentiel" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierConfidentiel" layoutX="6.0" layoutY="47.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10;" />
+            <Label alignment="CENTER" layoutX="154.0" layoutY="64.0" text="/" textFill="#c6bdbd" />
+            <Label fx:id="maxCourrier1" layoutX="160.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="nbrCourrierConfidentiel" layoutX="145.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent1" layoutX="164.0" layoutY="29.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerCourrierAdministratifEntrant" cacheShape="false" layoutX="531.0" layoutY="133.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="12.0" layoutY="14.0" text="courrier administratif" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierAdministratif" layoutX="9.0" layoutY="46.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10; -fx-background-color: white;" />
+            <Label fx:id="nbrCourrierAdmin" layoutX="155.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent2" layoutX="170.0" layoutY="30.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="50.0" layoutY="285.0" prefHeight="4.0" prefWidth="76.0" />
+      <Label layoutX="131.0" layoutY="273.0" text="Courrier Sortant">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="271.0" layoutY="286.0" prefHeight="4.0" prefWidth="562.0" />
+      <Label alignment="CENTER" layoutX="695.0" layoutY="197.0" text="/" textFill="#c6bdbd" />
+      <Label fx:id="maxCourrier2" layoutX="702.0" layoutY="198.0" text="0" textFill="#c6bdbd" />
+      <AnchorPane fx:id="containerCourrierOrdinaireSortant" cacheShape="false" layoutX="71.0" layoutY="324.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="courrier ordinaire" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierOrdinaireSortant" layoutX="11.0" layoutY="46.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10;" />
+            <Label alignment="CENTER" layoutX="158.0" layoutY="65.0" text="/" textFill="#c6bdbd" />
+            <Label fx:id="maxCourrierSortant0" layoutX="164.0" layoutY="66.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="nbreCourrierOrdinaireSortant" layoutX="149.0" layoutY="66.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent3" layoutX="168.0" layoutY="29.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerCourrierConfidentielSortant" cacheShape="false" layoutX="300.0" layoutY="324.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="courrier confidentiel" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierConfidentielSortant" layoutX="6.0" layoutY="47.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10;" />
+            <Label fx:id="nbrCourrierConfidentielSortant" layoutX="145.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent4" layoutX="164.0" layoutY="29.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="154.0" layoutY="64.0" text="/" textFill="#c6bdbd" />
+            <Label fx:id="maxCourrierSortant1" layoutX="160.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerCourrierAdministratifSortant" cacheShape="false" layoutX="531.0" layoutY="324.0" prefHeight="113.0" prefWidth="200.0" styleClass="courrierBox" stylesheets="@../application/application.css">
+         <children>
+            <Label layoutX="12.0" layoutY="14.0" text="courrier administratif" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="15.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBarCourrierAdministratifSortant" layoutX="9.0" layoutY="46.0" prefHeight="17.0" prefWidth="179.0" style="-fx-accent: #29BD10; -fx-background-color: white;" />
+            <Label fx:id="nbrCourrierAdminSortant" layoutX="155.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+            <Label fx:id="Showpercent5" layoutX="170.0" layoutY="30.0" text="0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="164.0" layoutY="64.0" text="/" textFill="#c6bdbd" />
+            <Label fx:id="maxCourrierSortant2" layoutX="170.0" layoutY="65.0" text="0" textFill="#c6bdbd" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="73.0" layoutY="473.0" text="Total courrier Entrant">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="338.0" layoutY="473.0" text="Total courrier Sortant">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="618.0" layoutY="473.0" text="Total Enregistrer">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="TotalEntrant" layoutX="162.0" layoutY="516.0" text="0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="TotalSortant" layoutX="436.0" layoutY="516.0" text="0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="TotalEnregistrer" layoutX="693.0" layoutY="516.0" text="0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="473.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController.ListDashCourrierSortantcontroller">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="434.0" prefWidth="473.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tabOrdinaire" text="courrier Ordinaire">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewCourrierOrdinaireSortant" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="445.0">
+                           <columns>
+                              <TableColumn fx:id="IDColumOrdinaire" prefWidth="27.0" text="ID" />
+                              <TableColumn fx:id="nomCourrierColumOrdinaire" prefWidth="106.0" text="NOM COURRIER" />
+                              <TableColumn fx:id="nomExpediteurOrdinaire" prefWidth="119.0" text="NOM EXPEDITEUR" />
+                              <TableColumn fx:id="dateArriveColumOrdinaire" prefWidth="103.0" text="DATE ARRIVE" />
+                              <TableColumn fx:id="objetColumOrdinaire" prefWidth="89.0" text="OBJET" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="impression" layoutX="107.0" layoutY="366.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" text="IMPRIMER UNE LISTE " />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabConfidentiel" text="courrier confidentiel">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewCourrierConfidentielSortant" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="445.0">
+                           <columns>
+                              <TableColumn fx:id="IDColumConfidentiel" prefWidth="27.0" text="ID" />
+                              <TableColumn fx:id="nomCourrierColumConfidentiel" prefWidth="106.0" text="NOM COURRIER" />
+                              <TableColumn fx:id="nomExpediteurConfidentiel" prefWidth="105.0" text="NOM EXPEDITEUR" />
+                              <TableColumn fx:id="dateArriveColumConfidentiel" prefWidth="90.0" text="DATE ARRIVE" />
+                              <TableColumn fx:id="objetColumConfidentiel" prefWidth="116.0" text="OBJET" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="impression1" layoutX="107.0" layoutY="359.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" text="IMPRIMER UNE LISTE " />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabAdministratif" text="courrier administratif">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="TableViewCourrierAdminstratifSortant" layoutX="14.0" layoutY="14.0" prefHeight="336.0" prefWidth="445.0">
+                           <columns>
+                              <TableColumn fx:id="IDColumAdminstratif" prefWidth="27.0" text="ID" />
+                              <TableColumn fx:id="nomCourrierColumAdminstratif" prefWidth="106.0" text="NOM COURRIER" />
+                              <TableColumn fx:id="nomExpediteurAdminstratif" prefWidth="105.0" text="NOM EXPEDITEUR" />
+                              <TableColumn fx:id="dateArriveColumAdminstratif" prefWidth="90.0" text="DATE ARRIVE" />
+                              <TableColumn fx:id="objetColumAdminstratif" prefWidth="116.0" text="OBJET" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="impression2" layoutX="107.0" layoutY="360.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" text="IMPRIMER UNE LISTE " />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
